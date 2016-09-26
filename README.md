@@ -27,7 +27,7 @@
 
 ##2. Fix Orientation to avoid rotatino issue
 
-
+{
 import UIKit
 extension UIImage {
     func fixOrientation() -> UIImage {
@@ -43,7 +43,7 @@ extension UIImage {
         return normalizedImage;
     }
 }
-
+}
 
 ##3. upload image to parse 
 
