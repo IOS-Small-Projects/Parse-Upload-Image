@@ -29,19 +29,20 @@
 
 
             import UIKit
+
             extension UIImage {
-            func fixOrientation() -> UIImage {
-                         if self.imageOrientation == UIImageOrientation.Up {
-                         return self
-            }
+               func fixOrientation() -> UIImage {
+                  if self.imageOrientation == UIImageOrientation.Up {
+                    return self
+                 }
         
-        UIGraphicsBeginImageContextWithOptions(self.size, false, self.scale)
-        self.drawInRect(CGRectMake(0, 0, self.size.width, self.size.height))
-        let normalizedImage:UIImage = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        
-        return normalizedImage;
-                        }
+                UIGraphicsBeginImageContextWithOptions(self.size, false, self.scale)
+                self.drawInRect(CGRectMake(0, 0, self.size.width, self.size.height))
+                let normalizedImage:UIImage = UIGraphicsGetImageFromCurrentImageContext()
+                UIGraphicsEndImageContext()
+                
+                 return normalizedImage;
+             }
             }
 
 
