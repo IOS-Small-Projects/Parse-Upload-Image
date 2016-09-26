@@ -48,7 +48,7 @@
 
 ##3. upload image to parse 
 
-func UploadUserImage(user : PF_User, image: UIImage?, completionHandler: (sucess: Bool) -> ()) {
+            func UploadUserImage(user : PF_User, image: UIImage?, completionHandler: (sucess: Bool) -> ()) {
         
         //create an image data
         
