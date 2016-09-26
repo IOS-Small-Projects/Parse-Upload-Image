@@ -27,13 +27,13 @@
 
 ##2. Fix Orientation to avoid rotatino issue
 
-{
-import UIKit
-extension UIImage {
-    func fixOrientation() -> UIImage {
-        if self.imageOrientation == UIImageOrientation.Up {
-            return self
-        }
+
+            import UIKi t
+            extension UIImage {
+            func fixOrientation() -> UIImage {
+                         if self.imageOrientation == UIImageOrientation.Up {
+                         return self
+            }
         
         UIGraphicsBeginImageContextWithOptions(self.size, false, self.scale)
         self.drawInRect(CGRectMake(0, 0, self.size.width, self.size.height))
